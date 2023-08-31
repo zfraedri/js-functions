@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Function Syntax in JavaScript</title>
+        <meta name="author" content="Prof. Barnett">
+        <meta name="description" content="Examples and practice with JavaScript functions, function expressions, and arrow functions.">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Introduction to Functions - GIT417</h1>
+            <p>Let's Practice Writing JavaScript Functions</p>
+        </header>
+        <main>
+            <section id="section1">
+                <h2>Standard Function Syntax</h2>
+                <p>A function is a named group of statements. JavaScript functions are declared with the function keyword followed by the function name and parameter list in parentheses ().</p>
+                <pre>
+                    <code>
+<!--	             --><span class="keyword">function</span> <span class="name">functionName</span>(parameter1, parameter2, ... parameterN){
+<!-- 	            		-->  <span class="comments">//statements go here</span>
+        
+<!--	             		-->  <span class="comments">//the return statement is optional</span>
+<!-- 	            		-->  <span class="keyword">return</span> someValue;
+<!-- 	            -->}
+                    </code>
+                </pre>
+            </section>
+            <section id="section2">
+                <h2>Standard Function 1</h2>
+                <p>For this box, you're going to write a function that will calculate the result of two numbers added together.</p>
+                <form>
+                    <label for="add1">Enter a number:</label>
+                    <input type="number" name="add1" id="add1" required>
+                    <label for="add2">Enter a number:</label>
+                    <input type="number" name="add2" id="add2" required>
+                    <input type="submit" name="mySubmit1" id="mySubmit1">
+                </form>
+                <p class="output"></p>
+            </section>
+            <section id="section3">
+                <h2>Standard Function 2</h2>
+        In this box, we'll write a function that will concatenate some strings that we will display on the page.</p>
+                <form>
+                    <label for="str1">Enter a word:</label>
+                    <input type="text" name="str1" id="str1" required>
+                    <label for="str2">Enter another word:</label>
+                    <input type="text" name="str2" id="str2" required>
+                    <input type="submit" name="mySubmit2" id="mySubmit2">
+                </form>
+                <p class="output"></p>
+            </section>
+            <section id="section4">
+                <h2>Function Expressions and Anonymous Functions Syntax</h2>
+                <p>JavaScript functions may be assigned to a variable with a function expression. A function expression is identical to a function declaration, except the function name may be omitted. A function without a name is called an anonymous function.</p>
+                <pre>
+                    <code>
+<!--                --><span class="keyword">let</span> <span class="name">variableName</span> = <span class="keyword">function</span>(parameter1, ...parameterN){
+<!--                 -->  <span class="comments">//statements go here</span>
+
+<!--                 -->  <span class="comments">//the return statement is optional</span>
+<!--                 -->  <span class="keyword">return</span> someValue;
+<!--                 -->}
+                    </code>
+                </pre>
+            </section>
+            <section id="section5">
+                <h2>Function Expression 1</h2>
+                <p>For this box, you're going to write a function that will tell the user whether the number they entered is less than or greater than 100.</p>
+                <form>
+                    <label for="add3">Enter a number:</label>
+                    <input type="number" name="add3" id="add3" required>
+                    <input type="submit" name="mySubmit3" id="mySubmit3">
+                </form>
+                <p class="output"></p>
+            </section>
+            <section id="section6">
+                <h2>Function Expression 2</h2>
+                <p>Choose an answer to the trivia question below:<br>What is the number of this course? (GIT___)</p>
+                <form>
+                    <label for="answer">Choose Your Answer:</label>
+                    <select name="answer" id="answer">
+                        <option value="">Choose Below</option>
+                        <option value="a">215</option>
+                        <option value="b">337</option>
+                        <option value="c">414</option>
+                        <option value="d">417</option>
+                    </select>
+                    <input type="submit" name="mySubmit4" id="mySubmit4">
+                </form>
+                <p class="output"></p>
+            </section>
+            <section id="section7">
+                <h2>Arrow Function Syntax</h2>
+                <p>An arrow function is an anonymous function that uses an arrow => to create a compact function.</p>
+                <pre>
+                    <code>
+<!--                 --><span class="keyword">let</span> <span class="name">variableName</span> = (a, b) => a + b;
+                    </code>
+                </pre>
+            </section>
+            <section id="section8">
+                <h2>Arrow Function 1</h2>
+                <p>For this box, you're going to re-write the function that will calculate the result of two numbers added together with an arrow function instead of the standard style.</p>
+                <form>
+                    <label for="add5">Enter a number:</label>
+                    <input type="number" name="add5" id="add5" required>
+                    <label for="add6">Enter a number:</label>
+                    <input type="number" name="add6" id="add6" required>
+                    <input type="submit" name="mySubmit5" id="mySubmit5">
+                </form>
+                <p class="output"></p>
+            </section>
+            <section id="section9">
+                <h2>Arrow Function 2</h2>
+                <p>For this box, you're going to re-write the standard function that will calculate the result of two numbers added together using an arrow function syntax.</p>
+                <form>
+                    <label for="str5">Enter a word:</label>
+                    <input type="text" name="str5" id="str5" required>
+                    <label for="str6">Enter another word:</label>
+                    <input type="text" name="str6" id="str6" required>
+                    <input type="submit" name="mySubmit6" id="mySubmit6">
+                </form>
+                <p class="output"></p>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2021 - Prof. Barnett</p>
+        </footer>
+    </body>
+</html>
